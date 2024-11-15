@@ -1,0 +1,23 @@
+{
+  "name": "task1",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "migrations" : "node ./migrations/create_table.js",
+    "migrations-down" : "node ./migrations/drop_table.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "joi": "^17.13.3",
+    "knex": "^3.1.0",
+    "nodemon": "^3.1.7",
+    "pg": "^8.13.1"
+  }
+}
